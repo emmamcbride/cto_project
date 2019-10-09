@@ -1,44 +1,118 @@
-
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+  </div>
+</div>
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+
+<head>
+ <meta name="viewport"content="width=100%, initial-scale=1">
+ <style> body{margin: 0;}
+.topnav {overflow: hidden; background-color: #f8f8f8;}
+.topnav a {float: left; color: #1d70b8; text-align: center; padding: 14px 16px; font-weight: 700; font-size: 1rem; line-height: 1.25; text-decoration: none;}
+.topnav a:active {background-color: #f8f8f8; color: #1d70b8;}
+.topnav a:hover {text-decoration: underline;}
+.topnav .current {background-color: #f8f8f8; color: #1d70b8; border-bottom: 4px; border-bottom-style: solid; border-bottom-color: #1d70b8;}
+</style></head>
+
+<body>
+<div class="topnav">
+ <a href="#contribute">Contribute</a>
+ <a href="#styles">Styles</a>
+ <a href="#components">Components</a>
+ <a href="/patterns/personal/contacthmrc">Patterns</a>
+</div></body>
+
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a></div>
+
 {% endblock %}
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        The GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
 
-      <h2 class="govuk-heading-m">About this page</h2>
+    <main class="govuk-main-wrapper">
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Contact HMRC
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a class="govuk-link" href="https://design.tax.service.gov.uk/hmrc-design-patterns/">
+                Her Majesty's Revenue & Custom (HMRC)
+              </a>
+            </li>
+            <li>
+              Date uploaded: 01/09/2019
+            </li>
+            <li>
+              Uploaded by <a href="https://homeofficedigital.slack.com/messages/DNEN6TVC0">@emmamcb</a>
+            </li>
+            <br>
+            <li>
+              <strong class="govuk-tag">
+                complete
+              </strong>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+  </div>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
 
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-xl">Patterns</span>
+    <h1 class="govuk-heading-xl">Personal details</h1>
 
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
+    <img src="/public/images/Personal-details.jpg" class="screenshot" style="display:inline-block;max-width:100%" alt="Change your address and personal details, by HMRC.">
 
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-        <li>
-          <a href="https://design-system.service.gov.uk">
-            GOV.UK Design System
-          </a>
-        </li>
-      </ul>
-    </div>
+    <br>
+    <br>
+    <br>
+
+    <p class="govuk-body govuk-!-font-weight-bold">Context</p>
+    <p class="govuk-body">This default paragraph is for screenshot context. This default paragraph is for screenshot context. This default paragraph is for screenshot context. This default paragraph is for screenshot context. This default paragraph
+      is for screenshot context. This default paragraph is for screenshot context. This default paragraph is for screenshot context. This default paragraph is for screenshot context.</p>
+    <br>
+    <p class="govuk-body govuk-!-font-weight-bold">Research and findings</p>
+    <p class="govuk-body">This default paragraph is for screenshot research. This default paragraph is for screenshot research. This default paragraph is for screenshot research. This default paragraph is for screenshot research. This default
+      paragraph is for screenshot research. This default paragraph is for screenshot research. This default paragraph is for screenshot research. This default paragraph is for screenshot.</p>
+    <br>
+    <p class="govuk-body govuk-!-font-weight-bold">Additional links</p>
+    <li><a href="#" class="govuk-link govuk-link--no-visited-state">This space is for links to additional work such as Sketch files.co.uk</a></li>
+    <li><a href="#" class="govuk-link govuk-link--no-visited-state">This space is for links to additional work such as Heroku files.co.uk</a></li>
+
+
+  </div>
+</div>
+
+</main>
+</div>
+
+
+</div>
 </div>
 
 {% endblock %}
