@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+  </div>
+</div>
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+
+<head>
+ <meta name="viewport"content="width=100%, initial-scale=1">
+ <style> body{margin: 0;}
+.topnav {overflow: hidden; background-color: #f8f8f8;}
+.topnav a {box-sizing: border-box; display: block; position: relative; height: 50px; float: left; color: #1d70b8; text-align: center; padding: 0 15px; font-weight: 700; font-size: 1rem; line-height: 50px; text-decoration: none;}
+.topnav a:active {background-color: #f8f8f8; color: #1d70b8;}
+.topnav a:hover {text-decoration: underline;}
+.topnav .current {background-color: #f8f8f8; color: #1d70b8; border-bottom: 4px; border-bottom-style: solid; border-bottom-color: #1d70b8;}
+</style></head>
+
+<body>
+<div class="topnav">
+ <a href="/contribute/contribute">Contribute</a>
+ <a class="current" href="/styles/styles">Styles</a>
+ <a href="/components/components">Components</a>
+ <a href="/patterns/patterns">Patterns</a>
+</div></body>
+
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a></div>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+
+    <main class="govuk-main-wrapper">
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <br><br><br>
+  <ul class="govuk-list">
+    <li><a class="govuk-link govuk-link--no-visited-state" href="#">Colour</a></li>
+    <li><a class="govuk-link govuk-link--no-visited-state" href="#">Images</a></li>
+    <li><a class="govuk-link govuk-link--no-visited-state" href="#">Layout</a></li>
+    <li><a class="govuk-link govuk-link--no-visited-state" href="#">Page template</a></li>
+    <li><a class="govuk-link govuk-link--no-visited-state" href="#">Spacing</a></li>
+    <li><a class="govuk-link govuk-link--no-visited-state" href="#">Typography</a></li>
+  </ul>
+        </nav>
+  </div>
+
+
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-xl">Styles</span>
+    <h1 class="govuk-heading-xl">Colour</h1>
+    </div>
+
+
+</div>
+</div>
+
+{% endblock %}

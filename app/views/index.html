@@ -27,7 +27,7 @@ GOV.UK Prototype Kit
  <meta name="viewport"content="width=100%, initial-scale=1">
  <style> body{margin: 0;}
 .topnav {overflow: hidden; background-color: #f8f8f8;}
-.topnav a {float: left; color: #1d70b8; text-align: center; padding: 14px 16px; font-weight: 700; font-size: 1rem; line-height: 1.25; text-decoration: none;}
+.topnav a {box-sizing: border-box; display: block; position: relative; height: 50px; float: left; color: #1d70b8; text-align: center; padding: 0 15px; font-weight: 700; font-size: 1rem; line-height: 50px; text-decoration: none;}
 .topnav a:active {background-color: #f8f8f8; color: #1d70b8;}
 .topnav a:hover {text-decoration: underline;}
 .topnav .current {background-color: #f8f8f8; color: #1d70b8; border-bottom: 4px; border-bottom-style: solid; border-bottom-color: #1d70b8;}
@@ -35,84 +35,49 @@ GOV.UK Prototype Kit
 
 <body>
 <div class="topnav">
- <a href="#contribute">Contribute</a>
- <a href="#styles">Styles</a>
- <a href="#components">Components</a>
- <a href="/patterns/personal/contacthmrc">Patterns</a>
+ <a href="/contribute/contribute">Contribute</a>
+ <a href="/styles/styles">Styles</a>
+ <a href="/components/components">Components</a>
+ <a href="/patterns/patterns">Patterns</a>
 </div></body>
-
-<div class="govuk-width-container">
-  <a href="#" class="govuk-back-link">Back</a></div>
 
 {% endblock %}
 
 {% block content %}
-
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-quarter">
-
-    <main class="govuk-main-wrapper">
-      <aside class="app-related-items" role="complementary">
-        <h2 class="govuk-heading-m" id="subsection-title">
-          Contact HMRC
-        </h2>
-        <nav role="navigation" aria-labelledby="subsection-title">
-          <ul class="govuk-list govuk-!-font-size-16">
-            <li>
-              <a class="govuk-link" href="https://design.tax.service.gov.uk/hmrc-design-patterns/">
-                Her Majesty's Revenue & Custom (HMRC)
-              </a>
-            </li>
-            <li>
-              Date uploaded: 01/09/2019
-            </li>
-            <li>
-              Uploaded by <a href="https://homeofficedigital.slack.com/messages/DNEN6TVC0">@emmamcb</a>
-            </li>
-            <br>
-            <li>
-              <strong class="govuk-tag">
-                complete
-              </strong>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-  </div>
-
-
-  <div class="govuk-grid-column-two-thirds">
-    <span class="govuk-caption-xl">Patterns</span>
-    <h1 class="govuk-heading-xl">Personal details</h1>
-
-    <img src="/public/images/Personal-details.jpg" class="screenshot" style="display:inline-block;max-width:100%" alt="Change your address and personal details, by HMRC.">
-
-    <br>
-    <br>
-    <br>
-
-    <p class="govuk-body govuk-!-font-weight-bold">Context</p>
-    <p class="govuk-body">This default paragraph is for screenshot context. This default paragraph is for screenshot context. This default paragraph is for screenshot context. This default paragraph is for screenshot context. This default paragraph
-      is for screenshot context. This default paragraph is for screenshot context. This default paragraph is for screenshot context. This default paragraph is for screenshot context.</p>
-    <br>
-    <p class="govuk-body govuk-!-font-weight-bold">Research and findings</p>
-    <p class="govuk-body">This default paragraph is for screenshot research. This default paragraph is for screenshot research. This default paragraph is for screenshot research. This default paragraph is for screenshot research. This default
-      paragraph is for screenshot research. This default paragraph is for screenshot research. This default paragraph is for screenshot research. This default paragraph is for screenshot.</p>
-    <br>
-    <p class="govuk-body govuk-!-font-weight-bold">Additional links</p>
-    <li><a href="#" class="govuk-link govuk-link--no-visited-state">This space is for links to additional work such as Sketch files.co.uk</a></li>
-    <li><a href="#" class="govuk-link govuk-link--no-visited-state">This space is for links to additional work such as Heroku files.co.uk</a></li>
-
-
-  </div>
-</div>
-
-</main>
-</div>
-
-
+ <div class="govuk-grid-row">
+   <div class="govuk-grid-column-full">
+     <div class="govuk-panel govuk-panel--confirmation" style="background-color:#1d70b8; text-align:left; ">
+         <h1 class="govuk-panel__title">Design Examples</h1>
+         <p class="app-masthead__description"style="color:white; max-width: 560px;" >
+         Add your design examples alongside the corresponding component on GOV.UK . This process is simple and straightforward.
+         </p>
+         <a href="/contribute/contribute" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button" style="color:#1d70b8;background-color:#fff;">
+           Contribute
+           <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false" style="color:#1d70b8; background-color:#fff;">
+             <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+           </svg>
+         </a>
+     </div>
+     <div class="govuk-main-wrapper govuk-main-wrapper--s">
+     </div>
+     <div class="govuk-grid-column-one-third">
+       <h2 class="govuk-heading-l">Styles</h2>
+       <p>The default paragraph font size is 19px on large screens and 16px on small screens.</p>
+       <img src="/public/images/Address.png" style="display:inline-block;max-width:100%"alt="Screen shot of design example from Styles.">
+       <a href="/styles/styles" class="govuk-link">Browse styles</a>
+     </div>
+ <div class="govuk-grid-column-one-third">
+   <h2 class="govuk-heading-l">Components</h2>
+   <p>The default paragraph font size is 19px on large screens and 16px on small screens.</p>
+     <img src="/public/images/Sign-in.png" style="display:inline-block;max-width:100%"alt="Screen shot of design example from Styles.">
+     <a href="/components/components" class="govuk-link">Browse components</a>
+ </div>
+ <div class="govuk-grid-column-one-third">
+   <h2 class="govuk-heading-l">Patterns</h2>
+   <p>The default paragraph font size is 19px on large screens and 16px on small screens.</p>
+     <img src="/public/images/Check.png" style="display:inline-block;max-width:100%"alt="Screen shot of design example from Styles.">
+     <a href="/patterns/patterns" class="govuk-link">Browse patterns</a>
+ </div>
 </div>
 </div>
-
 {% endblock %}
