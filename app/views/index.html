@@ -24,60 +24,97 @@ GOV.UK Prototype Kit
 
 
 <head>
- <meta name="viewport"content="width=100%, initial-scale=1">
- <style> body{margin: 0;}
-.topnav {overflow: hidden; background-color: #f8f8f8;}
-.topnav a {box-sizing: border-box; display: block; position: relative; height: 50px; float: left; color: #1d70b8; text-align: center; padding: 0 15px; font-weight: 700; font-size: 1rem; line-height: 50px; text-decoration: none;}
-.topnav a:active {background-color: #f8f8f8; color: #1d70b8;}
-.topnav a:hover {text-decoration: underline;}
-.topnav .current {background-color: #f8f8f8; color: #1d70b8; border-bottom: 4px; border-bottom-style: solid; border-bottom-color: #1d70b8;}
-</style></head>
+  <meta name="viewport" content="width=100%, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #f8f8f8;
+    }
+
+    .topnav a {
+      box-sizing: border-box;
+      display: block;
+      position: relative;
+      height: 50px;
+      float: left;
+      color: #1d70b8;
+      text-align: center;
+      padding: 0 15px;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 50px;
+      text-decoration: none;
+    }
+
+    .topnav a:active {
+      background-color: #f8f8f8;
+      color: #1d70b8;
+    }
+
+    .topnav a:hover {
+      text-decoration: underline;
+    }
+
+    .topnav .current {
+      background-color: #f8f8f8;
+      color: #1d70b8;
+      border-bottom: 4px;
+      border-bottom-style: solid;
+      border-bottom-color: #1d70b8;
+    }
+  </style>
+</head>
 
 <body>
-<div class="topnav">
- <a href="/contribute/contribute">Contribute</a>
- <a href="/styles/styles">Styles</a>
- <a href="/components/components">Components</a>
- <a href="/patterns/patterns">Patterns</a>
-</div></body>
+  <div class="topnav">
+    <a href="/contribute/contribute">Contribute</a>
+    <a href="/styles/styles">Styles</a>
+    <a href="/components/components">Components</a>
+    <a href="/patterns/patterns">Patterns</a>
+  </div>
+</body>
 
 {% endblock %}
 
 {% block content %}
- <div class="govuk-grid-row">
-   <div class="govuk-grid-column-full">
-     <div class="govuk-panel govuk-panel--confirmation" style="background-color:#1d70b8; text-align:left; ">
-         <h1 class="govuk-panel__title">Design Examples</h1>
-         <p class="app-masthead__description"style="color:white; max-width: 560px;" >
-         Add your design examples alongside the corresponding component on GOV.UK . This process is simple and straightforward.
-         </p>
-         <a href="/contribute/contribute" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button" style="color:#1d70b8;background-color:#fff;">
-           Contribute
-           <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false" style="color:#1d70b8; background-color:#fff;">
-             <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
-           </svg>
-         </a>
-     </div>
-     <div class="govuk-main-wrapper govuk-main-wrapper--s">
-     </div>
-     <div class="govuk-grid-column-one-third">
-       <h2 class="govuk-heading-l">Styles</h2>
-       <p>The default paragraph font size is 19px on large screens and 16px on small screens.</p>
-       <img src="/public/images/Address.png" style="display:inline-block;max-width:100%"alt="Screen shot of design example from Styles.">
-       <a href="/styles/styles" class="govuk-link">Browse styles</a>
-     </div>
- <div class="govuk-grid-column-one-third">
-   <h2 class="govuk-heading-l">Components</h2>
-   <p>The default paragraph font size is 19px on large screens and 16px on small screens.</p>
-     <img src="/public/images/Sign-in.png" style="display:inline-block;max-width:100%"alt="Screen shot of design example from Styles.">
-     <a href="/components/components" class="govuk-link">Browse components</a>
- </div>
- <div class="govuk-grid-column-one-third">
-   <h2 class="govuk-heading-l">Patterns</h2>
-   <p>The default paragraph font size is 19px on large screens and 16px on small screens.</p>
-     <img src="/public/images/Check.png" style="display:inline-block;max-width:100%"alt="Screen shot of design example from Styles.">
-     <a href="/patterns/patterns" class="govuk-link">Browse patterns</a>
- </div>
-</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-panel govuk-panel--confirmation" style="background-color:#1d70b8; text-align:left; ">
+      <h1 class="govuk-panel__title">Design Examples</h1>
+      <p class="app-masthead__description" style="color:white; max-width: 560px;">
+        Add your design examples alongside the corresponding component on GOV.UK . This process is simple and straightforward.
+      </p>
+      <a href="/contribute/contribute" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button" style="color:#1d70b8;background-color:#fff;">
+        Contribute
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false" style="color:#1d70b8; background-color:#fff;">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+        </svg>
+      </a>
+    </div>
+    <div class="govuk-main-wrapper govuk-main-wrapper--s">
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <h2 class="govuk-heading-l">Styles</h2>
+      <p>The default paragraph font size is 19px on large screens and 16px on small screens.</p>
+      <img src="/public/images/Address.png" style="display:inline-block;max-width:100%" alt="Screen shot of design example from Styles.">
+      <a href="/styles/styles" class="govuk-link">Browse styles</a>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <h2 class="govuk-heading-l">Components</h2>
+      <p>The default paragraph font size is 19px on large screens and 16px on small screens.</p>
+      <img src="/public/images/Sign-in.png" style="display:inline-block;max-width:100%" alt="Screen shot of design example from Styles.">
+      <a href="/components/components" class="govuk-link">Browse components</a>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <h2 class="govuk-heading-l">Patterns</h2>
+      <p>The default paragraph font size is 19px on large screens and 16px on small screens.</p>
+      <img src="/public/images/Check.png" style="display:inline-block;max-width:100%" alt="Screen shot of design example from Styles.">
+      <a href="/patterns/patterns" class="govuk-link">Browse patterns</a>
+    </div>
+  </div>
 </div>
 {% endblock %}
